@@ -1,9 +1,11 @@
 # JavaScript Algorithms and Data Structures
 
-> 🇺🇦 UKRAINE [IS BEING ATTACKED](https://twitter.com/MFA_Ukraine) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
+> 🇺🇦 UKRAINE [IS BEING ATTACKED](https://war.ukraine.ua/) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
 > - Help Ukraine via [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
 > - Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate-en/) fund
-> - More info on [war.ukraine.ua](https://war.ukraine.ua/)
+> - More info on [war.ukraine.ua](https://war.ukraine.ua/) and [MFA of Ukraine](https://twitter.com/MFA_Ukraine)
+
+<hr/>
 
 [![CI](https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg)](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
@@ -25,7 +27,7 @@ _Read this in other languages:_
 [_Español_](README.es-ES.md),
 [_Português_](README.pt-BR.md),
 [_Русский_](README.ru-RU.md),
-[_Türk_](README.tr-TR.md),
+[_Türkçe_](README.tr-TR.md),
 [_Italiana_](README.it-IT.md),
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
@@ -60,8 +62,9 @@ the data.
   * `A` [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
   * `A` [Fenwick Tree](src/data-structures/tree/fenwick-tree) (Binary Indexed Tree)
 * `A` [Graph](src/data-structures/graph) (both directed and undirected)
-* `A` [Disjoint Set](src/data-structures/disjoint-set)
+* `A` [Disjoint Set](src/data-structures/disjoint-set) - a union–find data structure or merge–find set
 * `A` [Bloom Filter](src/data-structures/bloom-filter)
+* `A` [LRU Cache](src/data-structures/lru-cache/) - Least Recently Used (LRU) cache
 
 ## Algorithms
 
@@ -97,7 +100,7 @@ a set of rules that precisely define a sequence of operations.
 * **Sets**
   * `B` [Cartesian Product](src/algorithms/sets/cartesian-product) - product of multiple sets
   * `B` [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
-  * `A` [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise and backtracking solutions)
+  * `A` [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise, backtracking, and cascading solutions)
   * `A` [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
   * `A` [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
   * `A` [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
@@ -130,6 +133,7 @@ a set of rules that precisely define a sequence of operations.
   * `B` [Shellsort](src/algorithms/sorting/shell-sort)
   * `B` [Counting Sort](src/algorithms/sorting/counting-sort)
   * `B` [Radix Sort](src/algorithms/sorting/radix-sort)
+  * `B` [Bucket Sort](src/algorithms/sorting/bucket-sort)
 * **Linked Lists**
   * `B` [Straight Traversal](src/algorithms/linked-list/traversal)
   * `B` [Reverse Traversal](src/algorithms/linked-list/reverse-traversal)
@@ -277,14 +281,14 @@ npm test -- 'LinkedList'
 
 **Troubleshooting**
 
-In case if linting or testing is failing try to delete the `node_modules` folder and re-install npm packages:
+If linting or testing is failing, try to delete the `node_modules` folder and re-install npm packages:
 
 ```
 rm -rf ./node_modules
 npm i
 ```
 
-Also make sure that you're using a correct Node version (`>=14.16.0`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
+Also make sure that you're using a correct Node version (`>=16`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
 
 **Playground**
 
@@ -301,7 +305,8 @@ npm test -- 'playground'
 
 ### References
 
-[▶ Data Structures and Algorithms on YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+- [▶ Data Structures and Algorithms on YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+- [✍🏻 Data Structure Sketches](https://okso.app/showcase/data-structures)
 
 ### Big O Notation
 
@@ -357,6 +362,10 @@ Below is the list of some of the most used Big O notations and their performance
 
 > You may support this project via ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb).
 
-[Folks who are backing this project](https://github.com/trekhleb/javascript-algorithms/blob/master/BACKERS.md) `∑ = 0`
+[Folks who are backing this project](https://github.com/trekhleb/javascript-algorithms/blob/master/BACKERS.md) `∑ = 1`
 
-> ℹ️ A few more [projects](https://trekhleb.dev/projects/) and [articles](https://trekhleb.dev/blog/) about JavaScript and algorithms on [trekhleb.dev](https://trekhleb.dev)
+## Author
+
+[@trekhleb](https://trekhleb.dev)
+
+A few more [projects](https://trekhleb.dev/projects/) and [articles](https://trekhleb.dev/blog/) about JavaScript and algorithms on [trekhleb.dev](https://trekhleb.dev)
